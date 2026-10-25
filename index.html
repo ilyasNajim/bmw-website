@@ -1,0 +1,719 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMW Compétition</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div style="display: none" id="#home">
+      <img src="./imgs/bmw-head.jpg" alt="" /><img src="./imgs/bmw-head2.jpg" alt="" />
+      <img src="./imgs/bmw-head3.jpg" alt="" /><img src="./imgs/bmw-head4.jpg" alt="" />
+      <img src="./imgs/bmw-head5.jpg" alt="" />
+    </div>
+
+    <!-- HEADER -->
+    <header>
+      <div id="navbar">
+        <div class="logo">
+          <h1>bmw <span>compétition</span></h1>
+        </div>
+        <div class="humberger">
+          <i class="fa-solid fa-bars active"></i>
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="menu-item">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#images">Catalogue</a></li>
+            <li><a href="#testimoniars">Avis</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <h1>Découvrez <span>la puissance et l'élégance</span> des voitures BMW</h1>
+        <p>
+          BMW Competition allie luxe raffiné, performances extrêmes, design agressif et innovations
+          technologiques pour une expérience de conduite passionnante et unique.
+        </p>
+        <button type="button" class="btn">Bienvenue à BMW</button>
+      </div>
+      <div class="scroll-indicator"><span></span></div>
+    </header>
+
+    <main>
+      <!-- ABOUT -->
+      <section id="about">
+        <div class="container">
+          <div class="about-content reveal">
+            <img src="./imgs/bmw-about.jpg" alt="bmw-about" />
+            <div class="about-para">
+              <h1>Expérience Ultime De Conduite BMW.</h1>
+              <p>
+                Découvrez le plaisir de conduire avec style, performance et technologie au cœur de
+                chaque modèle BMW contemporain.
+              </p>
+              <h2>Design Élégant</h2>
+              <p>
+                Chaque ligne et courbe incarne l'innovation et l'audace, créant une silhouette qui
+                se distingue sur toutes les routes.
+              </p>
+              <h4>Performance Pure</h4>
+              <p>
+                Des moteurs puissants, une agilité surprenante et des sensations intenses à chaque
+                fois que vous prenez le volant BMW.
+              </p>
+              <a href="#images" class="btn">Catalogue BMW <i class="fa-solid fa-arrow-down"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STATS (nouvelle section) -->
+      <section id="stats">
+        <div class="container">
+          <div class="stats-grid">
+            <div class="stat-item reveal">
+              <i class="fa-solid fa-car"></i>
+              <h2 class="counter" data-target="500">0</h2>
+              <span class="stat-plus">+</span>
+              <p>Modèles disponibles</p>
+            </div>
+            <div class="stat-item reveal">
+              <i class="fa-solid fa-calendar-days"></i>
+              <h2 class="counter" data-target="108">0</h2>
+              <span class="stat-plus"></span>
+              <p>Années d'histoire</p>
+            </div>
+            <div class="stat-item reveal">
+              <i class="fa-solid fa-globe"></i>
+              <h2 class="counter" data-target="140">0</h2>
+              <span class="stat-plus">+</span>
+              <p>Pays dans le monde</p>
+            </div>
+            <div class="stat-item reveal">
+              <i class="fa-solid fa-users"></i>
+              <h2 class="counter" data-target="2500000">0</h2>
+              <span class="stat-plus">+</span>
+              <p>Clients satisfaits</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CATALOGUE -->
+      <section id="images">
+        <div class="container">
+          <div class="heading">
+            <h2 class="reveal"><span>Voici le Catalogue de BMW</span></h2>
+            <p class="reveal">Explorez nos modèles puissants et élégants</p>
+            <div class="image-button reveal">
+              <button class="btn" data-category="all">All</button>
+              <button class="btn" data-category="bmw-serieM">Série M</button>
+              <button class="btn" data-category="bmw-serieX">Série X</button>
+              <button class="btn" data-category="bmw-serieI">Série I</button>
+              <button class="btn" data-category="bmw-sport">Sport</button>
+            </div>
+          </div>
+          <div class="slider-container">
+            <button class="prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <div class="slider-wrapper">
+              <div class="slider">
+                <div class="slide" data-category="bmw-serieM">
+                  <img src="./imgs/bmw-head.jpg" alt="BMW M" />
+                  <div class="content-image">
+                    <p class="car-model">BMW M1</p>
+                    <p class="car-price"><del>13 000 $</del> <span>12 000 $</span></p>
+                    <p class="car-description">
+                      Un modèle emblématique au design audacieux, conçu pour offrir des performances
+                      pures et une conduite exaltante.
+                    </p>
+                  </div>
+                </div>
+                <div class="slide" data-category="bmw-serieX">
+                  <img src="./imgs/bmw-head2.jpg" alt="BMW X" />
+                  <div class="content-image">
+                    <p class="car-model">BMW X1</p>
+                    <p class="car-price"><del>47 250 $</del> <span>44 900 $</span></p>
+                    <p class="car-description">
+                      SUV compact, agile et polyvalent. Idéal pour la ville comme pour les
+                      escapades.
+                    </p>
+                  </div>
+                </div>
+                <div class="slide" data-category="bmw-serieI">
+                  <img src="./imgs/bmw-head3.jpg" alt="BMW I" />
+                  <div class="content-image">
+                    <p class="car-model">BMW iX1</p>
+                    <p class="car-price"><del>46 900 $</del> <span>44 500 $</span></p>
+                    <p class="car-description">
+                      SUV compact électrique. Jusqu'à 313 ch et une autonomie de 440 à 475 km.
+                    </p>
+                  </div>
+                </div>
+                <div class="slide" data-category="bmw-sport">
+                  <img src="./imgs/bmw-head4.jpg" alt="BMW S" />
+                  <div class="content-image">
+                    <p class="car-model">BMW Coupé Sport</p>
+                    <p class="car-price"><del>36 000 $</del> <span>33 500 $</span></p>
+                    <p class="car-description">
+                      Coupé compact et dynamique, idéal pour les amateurs de conduite sportive.
+                    </p>
+                  </div>
+                </div>
+                <div class="slide" data-category="bmw-serieM">
+                  <img src="./imgs/BMW-seriesM1.jpg" alt="BMW M1" />
+                  <div class="content-image">
+                    <p class="car-model">BMW M2</p>
+                    <p class="car-price"><del>14 500 $</del> <span>13 800 $</span></p>
+                    <p class="car-description">
+                      Compacte, nerveuse et précise. Puissance brute et agilité sur route comme sur
+                      circuit.
+                    </p>
+                  </div>
+                </div>
+                <div class="slide" data-category="bmw-serieX">
+                  <img src="./imgs/BMW-seriesX1.jpg" alt="BMW X1" />
+                  <div class="content-image">
+                    <p class="car-model">BMW X2</p>
+                    <p class="car-price"><del>49 250 $</del> <span>46 800 $</span></p>
+                    <p class="car-description">
+                      SUV coupé au design audacieux. Sportivité et élégance combinées.
+                    </p>
+                  </div>
+                </div>
+                <div class="slide" data-category="bmw-serieI">
+                  <img src="./imgs/bmw-I1.jpg" alt="BMW I1" />
+                  <div class="content-image">
+                    <p class="car-model">BMW I4</p>
+                    <p class="car-price"><del>64 250 $</del> <span>61 900 $</span></p>
+                    <p class="car-description">
+                      Gran Coupé 100% électrique, élégance et autonomie jusqu'à 590 km.
+                    </p>
+                  </div>
+                </div>
+                <div class="slide" data-category="bmw-sport">
+                  <img src="./imgs/BMW-sport1.jpg" alt="BMW S1" />
+                  <div class="content-image">
+                    <p class="car-model">BMW 128ti</p>
+                    <p class="car-price"><del>41 000 $</del> <span>38 800 $</span></p>
+                    <p class="car-description">
+                      265 ch, châssis affûté et look agressif. La traction avant sportive par
+                      excellence.
+                    </p>
+                  </div>
+                </div>
+                <div class="slide" data-category="bmw-serieM">
+                  <img src="./imgs/BMW-seriesM2.jpg" alt="BMW M2" />
+                  <div class="content-image">
+                    <p class="car-model">BMW M3</p>
+                    <p class="car-price"><del>17 000 $</del> <span>16 500 $</span></p>
+                    <p class="car-description">
+                      Berline sportive alliant élégance et agressivité. Une référence dans sa
+                      catégorie.
+                    </p>
+                  </div>
+                </div>
+                <div class="slide" data-category="bmw-serieX">
+                  <img src="./imgs/bmw-X2.jpg" alt="BMW X2" />
+                  <div class="content-image">
+                    <p class="car-model">BMW X3</p>
+                    <p class="car-price"><del>59 000 $</del> <span>56 500 $</span></p>
+                    <p class="car-description">
+                      SUV familial spacieux et raffiné. Finitions haut de gamme et technologie
+                      embarquée.
+                    </p>
+                  </div>
+                </div>
+                <div class="slide" data-category="bmw-serieI">
+                  <img src="./imgs/BMW-seriesI2 (1).jpg" alt="BMW I2" />
+                  <div class="content-image">
+                    <p class="car-model">BMW i5</p>
+                    <p class="car-price"><del>76 200 $</del> <span>72 800 $</span></p>
+                    <p class="car-description">
+                      Berline d'affaires électrique. Jusqu'à 601 ch et autonomie jusqu'à 582 km.
+                    </p>
+                  </div>
+                </div>
+                <div class="slide" data-category="bmw-sport">
+                  <img src="./imgs/BMW-sport2.jpg" alt="BMW S2" />
+                  <div class="content-image">
+                    <p class="car-model">BMW M Sport</p>
+                    <p class="car-price"><del>52 000 $</del> <span>49 000 $</span></p>
+                    <p class="car-description">
+                      Coupé haut de gamme au style affirmé. Conduite sportive et raffinée.
+                    </p>
+                  </div>
+                </div>
+                <div class="slide" data-category="bmw-serieM">
+                  <img src="./imgs/bmw-seriesM3.jpg" alt="BMW M3" />
+                  <div class="content-image">
+                    <p class="car-model">BMW M4</p>
+                    <p class="car-price"><del>19 000 $</del> <span>18 200 $</span></p>
+                    <p class="car-description">
+                      Coupé musclé au style affirmé. Moteur explosif et précision de pilotage
+                      remarquable.
+                    </p>
+                  </div>
+                </div>
+                <div class="slide" data-category="bmw-serieI">
+                  <img src="./imgs/BMW-seriesI3(2).jpg" alt="BMW I3" />
+                  <div class="content-image">
+                    <p class="car-model">BMW iX</p>
+                    <p class="car-price"><del>84 200 $</del> <span>79 900 $</span></p>
+                    <p class="car-description">
+                      SUV 100% électrique. Jusqu'à 659 ch et autonomie de 518 à 600 km.
+                    </p>
+                  </div>
+                </div>
+                <div class="slide" data-category="bmw-serieX">
+                  <img src="./imgs/bmw-X3.jpg" alt="BMW X3" />
+                  <div class="content-image">
+                    <p class="car-model">BMW X4</p>
+                    <p class="car-price"><del>91 550 $</del> <span>88 000 $</span></p>
+                    <p class="car-description">
+                      SUV de luxe puissant et élégant. Performance, confort et technologies
+                      avancées.
+                    </p>
+                  </div>
+                </div>
+                <div class="slide" data-category="bmw-sport">
+                  <img src="./imgs/BMW-sport3.jpg" alt="BMW S3" />
+                  <div class="content-image">
+                    <p class="car-model">BMW Sport Line</p>
+                    <p class="car-price"><del>60 000 $</del> <span>56 800 $</span></p>
+                    <p class="car-description">
+                      Coupé compact et dynamique. Moteur vif et boîte automatique fluide.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="next"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+          <div class="dots"></div>
+        </div>
+      </section>
+
+      <!-- POURQUOI BMW (nouvelle section) -->
+      <section id="why-bmw">
+        <div class="container">
+          <div class="section-header reveal">
+            <h2>Pourquoi choisir <span>BMW</span> ?</h2>
+            <p>L'excellence à chaque kilomètre</p>
+            <hr />
+          </div>
+          <div class="features-grid">
+            <div class="feature-card reveal">
+              <div class="feature-icon"><i class="fa-solid fa-bolt"></i></div>
+              <h3>Performance Extrême</h3>
+              <p>
+                Des moteurs d'exception développant jusqu'à 659 ch pour des sensations de conduite
+                incomparables.
+              </p>
+            </div>
+            <div class="feature-card reveal">
+              <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <h3>Sécurité Maximale</h3>
+              <p>
+                Systèmes de sécurité de pointe et technologies d'assistance à la conduite pour votre
+                protection totale.
+              </p>
+            </div>
+            <div class="feature-card reveal">
+              <div class="feature-icon"><i class="fa-solid fa-leaf"></i></div>
+              <h3>Éco-responsable</h3>
+              <p>
+                Large gamme électrique et hybride pour une conduite plaisante tout en respectant
+                l'environnement.
+              </p>
+            </div>
+            <div class="feature-card reveal">
+              <div class="feature-icon"><i class="fa-solid fa-microchip"></i></div>
+              <h3>Technologie Avancée</h3>
+              <p>
+                Cockpit numérique, assistant IA, connectivité et mises à jour over-the-air
+                intégrées.
+              </p>
+            </div>
+            <div class="feature-card reveal">
+              <div class="feature-icon"><i class="fa-solid fa-gem"></i></div>
+              <h3>Luxe & Confort</h3>
+              <p>
+                Intérieurs finement travaillés, sièges massants, toit panoramique et finitions
+                premium.
+              </p>
+            </div>
+            <div class="feature-card reveal">
+              <div class="feature-icon"><i class="fa-solid fa-wrench"></i></div>
+              <h3>Service Premium</h3>
+              <p>
+                Réseau mondial de concessionnaires agréés, assistance 24h/24 et programme
+                d'entretien inclus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="question">
+        <div class="container">
+          <div class="according">
+            <h1 class="reveal"><span>Questions</span></h1>
+            <div class="according-item reveal">
+              <div class="according-header">
+                <h2>Quelle est la différence entre la BMW Série 3 et la Série 5 ?</h2>
+                <button class="btns toggle-icon">+</button>
+              </div>
+              <div class="according-content">
+                <p>
+                  La BMW Série 3 est une berline plus compacte, agile et sportive. La Série 5, quant
+                  à elle, est plus grande, plus luxueuse et offre davantage de confort.
+                </p>
+              </div>
+            </div>
+            <div class="according-item reveal">
+              <div class="according-header">
+                <h2>BMW est-elle une marque fiable ?</h2>
+                <button class="btns toggle-icon">+</button>
+              </div>
+              <div class="according-content">
+                <p>
+                  Oui, BMW est considérée comme une marque premium fiable, reconnue pour la qualité
+                  de ses moteurs et ses innovations technologiques. Un entretien régulier est
+                  essentiel.
+                </p>
+              </div>
+            </div>
+            <div class="according-item reveal">
+              <div class="according-header">
+                <h2>Quelle est la voiture électrique la plus populaire chez BMW ?</h2>
+                <button class="btns toggle-icon">+</button>
+              </div>
+              <div class="according-content">
+                <p>
+                  La BMW i4 est l'un des modèles électriques les plus populaires, combinant élégance
+                  et autonomie impressionnante. La BMW iX séduit également par son design futuriste.
+                </p>
+              </div>
+            </div>
+            <div class="according-item reveal">
+              <div class="according-header">
+                <h2>Combien coûte l'entretien d'une BMW ?</h2>
+                <button class="btns toggle-icon">+</button>
+              </div>
+              <div class="according-content">
+                <p>
+                  En moyenne, il faut prévoir entre 500 et 1 000 euros par an. Les modèles sportifs
+                  ou hybrides peuvent engendrer des coûts plus élevés.
+                </p>
+              </div>
+            </div>
+            <div class="according-item reveal">
+              <div class="according-header">
+                <h2>Quelle est la BMW la plus rapide ?</h2>
+                <button class="btns toggle-icon">+</button>
+              </div>
+              <div class="according-content">
+                <p>
+                  La BMW M5 CS est actuellement l'une des plus rapides. Dotée d'un V8 biturbo de 635
+                  ch, elle atteint les 100 km/h en 3 secondes.
+                </p>
+              </div>
+            </div>
+            <div class="according-item reveal">
+              <div class="according-header">
+                <h2>BMW propose-t-elle des modèles hybrides ?</h2>
+                <button class="btns toggle-icon">+</button>
+              </div>
+              <div class="according-content">
+                <p>
+                  Oui, BMW propose une large gamme "BMW eDrive". On retrouve des versions hybrides
+                  de la Série 3, Série 5, X3 et X5.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TÉMOIGNAGES -->
+      <section id="testimoniars">
+        <div class="testider">
+          <div class="testideres">
+            <h2 class="section-title">Témoignages de nos clients BMW</h2>
+            <div class="test active">
+              <img src="./imgs/man1.jpg" alt="man1" />
+              <div class="content">
+                <p>
+                  J'ai eu une cinquantaine de voitures dont 4 Porsche, et aujourd'hui à la retraite,
+                  la i3 me comble. C'est un vrai plaisir. Aucune autre électrique ne vaut l'i3.
+                </p>
+                <div class="quote"><i class="fa-solid fa-quote-left"></i></div>
+                <h3 class="name">ILYAS NAJIM</h3>
+              </div>
+            </div>
+            <div class="test">
+              <img src="./imgs/man2.jpg" alt="man2" />
+              <div class="content">
+                <p>
+                  J'ai toujours été attiré par le design des BMW. À chaque fois que je monte dedans,
+                  j'ai l'impression de conduire quelque chose de spécial.
+                </p>
+                <div class="quote"><i class="fa-solid fa-quote-left"></i></div>
+                <h3 class="name">Laurent Forin</h3>
+              </div>
+            </div>
+            <div class="test">
+              <img src="./imgs/man3.jpg" alt="man3" />
+              <div class="content">
+                <p>
+                  L'entretien peut être un peu cher, mais la qualité est au rendez-vous. Je n'ai
+                  jamais eu de panne sérieuse, et la voiture reste silencieuse et confortable.
+                </p>
+                <div class="quote"><i class="fa-solid fa-quote-left"></i></div>
+                <h3 class="name">HASSAN ALI</h3>
+              </div>
+            </div>
+            <div class="test">
+              <img src="./imgs/person1.jpg" alt="person1" />
+              <div class="content">
+                <p>
+                  La sensation de conduite est incomparable. On sent que tout est pensé pour le
+                  conducteur. Même après plusieurs années, elle garde son allure et sa performance.
+                </p>
+                <div class="quote"><i class="fa-solid fa-quote-left"></i></div>
+                <h3 class="name">ADIL BEN ZAOUIA</h3>
+              </div>
+            </div>
+            <div class="test">
+              <img src="./imgs/person2.jpg" alt="person2" />
+              <div class="content">
+                <p>
+                  Ce que j'aime chez BMW, c'est la sensation de contrôle total sur la route. La
+                  direction est précise, la conduite est fluide.
+                </p>
+                <div class="quote"><i class="fa-solid fa-quote-left"></i></div>
+                <h3 class="name">YOUNES HAFIDI</h3>
+              </div>
+            </div>
+            <div class="test">
+              <img src="./imgs/person3.jpg" alt="person3" />
+              <div class="content">
+                <p>
+                  Vraiment séduit par son confort. Je fais souvent 420 km sur autoroute sans
+                  problème. Une pêche dingue qui ajoute au plaisir de conduire.
+                </p>
+                <div class="quote"><i class="fa-solid fa-quote-left"></i></div>
+                <h3 class="name">Yasser Noussi</h3>
+              </div>
+            </div>
+          </div>
+          <button class="previous"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="nextous"><i class="fa-solid fa-chevron-right"></i></button>
+          <div class="dotis">
+            <span class="doti"></span><span class="doti"></span><span class="doti"></span>
+            <span class="doti"></span><span class="doti"></span><span class="doti"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <div class="contact-overlay"></div>
+        <div class="container">
+          <div class="contact-wrapper reveal">
+            <div class="contact-info">
+              <h2>Contactez <span>BMW</span></h2>
+              <p>
+                Vous avez une question sur un modèle, un essai, ou un devis ? Notre équipe est là
+                pour vous répondre.
+              </p>
+              <ul class="contact-details">
+                <li>
+                  <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                  <div><strong>Adresse</strong><span>Casablanca, Oulfa — Maroc</span></div>
+                </li>
+                <li>
+                  <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                  <div><strong>Téléphone</strong><span>+212 665 750 760</span></div>
+                </li>
+                <li>
+                  <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                  <div><strong>Email</strong><span>ilyasnajim17@gmail.com</span></div>
+                </li>
+                <li>
+                  <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+                  <div><strong>Horaires</strong><span>Lun – Sam : 9h00 à 18h00</span></div>
+                </li>
+              </ul>
+              <div class="contact-social">
+                <a href="https://www.facebook.com/profile.php?id=61551130357456" target="_blank"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="http://www.linkedin.com/in/ilyas-najim-050215359" target="_blank"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/najim.ilyass?igsh=MTRsbHF1cTA3emEwcQ=="
+                  target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="https://github.com/ilyasNajim" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+
+            <form
+              class="contact-form"
+              action="https://formsubmit.co/ilyasnajim37@gmail.com"
+              method="POST"
+            >
+              <h3>Envoyer un message</h3>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Nom complet</label>
+                  <div class="form-input">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" name="nom" placeholder="Votre nom" required />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Téléphone</label>
+                  <div class="form-input">
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="tel" name="telephone" placeholder="+212 6XX XXX XXX" />
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Adresse email</label>
+                <div class="form-input">
+                  <i class="fa-solid fa-envelope"></i>
+                  <input type="email" name="email" placeholder="votre@email.com" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Modèle BMW souhaité</label>
+                <div class="form-input">
+                  <i class="fa-solid fa-car"></i>
+                  <select name="modele">
+                    <option value="" disabled selected>Choisissez un modèle</option>
+                    <option value="Serie M">Série M</option>
+                    <option value="Serie X">Série X</option>
+                    <option value="Serie I">Série I (Électrique)</option>
+                    <option value="Sport">Sport Line</option>
+                    <option value="Autre">Autre / Renseignement</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Votre message</label>
+                <div class="form-input textarea">
+                  <i class="fa-solid fa-message"></i>
+                  <textarea
+                    name="message"
+                    rows="4"
+                    placeholder="Décrivez votre demande..."
+                    required
+                  ></textarea>
+                </div>
+              </div>
+              <button type="submit" class="contact-submit">
+                Envoyer le message <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2>BMW Parfaite</h2>
+              <p>
+                Excellence. Innovation. Passion pour la route. Rejoignez la communauté BMW et vivez
+                l'expérience ultime de conduite.
+              </p>
+              <ul>
+                <li><i class="fa-solid fa-location-dot"></i> Casablanca, Oulfa</li>
+                <li><i class="fa-solid fa-envelope"></i> ilyasnajim17@gmail.com</li>
+                <li><i class="fa-solid fa-phone"></i> 0665750760</li>
+              </ul>
+            </div>
+            <div class="col">
+              <h2>Les liens rapides</h2>
+              <ul>
+                <li><a href="#navbar">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#images">Catalogue</a></li>
+                <li><a href="#testimoniars">Témoignages</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <h2>Nous suivre</h2>
+              <ul>
+                <li>
+                  <i class="fa-brands fa-facebook-f"></i
+                  ><a href="https://www.facebook.com/profile.php?id=61551130357456" target="_blank">
+                    Facebook</a
+                  >
+                </li>
+                <li>
+                  <i class="fa-brands fa-linkedin"></i
+                  ><a href="http://www.linkedin.com/in/ilyas-najim-050215359" target="_blank">
+                    LinkedIn</a
+                  >
+                </li>
+                <li>
+                  <i class="fa-brands fa-youtube"></i
+                  ><a href="https://youtube.com/@ilyasnajim282?si=vBhF3jMK_SfI4Nb3" target="_blank">
+                    YouTube</a
+                  >
+                </li>
+                <li>
+                  <i class="fa-brands fa-instagram"></i
+                  ><a
+                    href="https://www.instagram.com/najim.ilyass?igsh=MTRsbHF1cTA3emEwcQ=="
+                    target="_blank"
+                  >
+                    Instagram</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-end">
+        <p>
+          © 2025 BMW PARFAITE. Tous les droits sont réservés | made by
+          <span class="text-primar">ILYAS NAJIM</span>
+        </p>
+      </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Retour en haut">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="index.js"></script>
+  </body>
+</html>
