@@ -14,7 +14,7 @@ A modern, responsive automotive showroom inspired by BMW's iconic design and per
 
 <br><br>
 
-<img src="bmw-preview.png" alt="BMW Website Preview" width="900">
+<img src="bmw-preview.png.png" alt="BMW Website Preview" width="900">
 
 <br>
 
